@@ -1,7 +1,7 @@
 const { leerJSON, escribirJSON } = require("../data");
 const Tarea = require("./Tarea");
 
-module.exports =
+module.exports = {
   editar: function (clase, estado) {
     const tareas = this.tareas;
     const tarea = tareas.find((tarea) => tarea.clase === clase);
@@ -17,4 +17,5 @@ module.exports =
     escribirJSON(tareasActualizadad);
 
     return `El estado de la clase ${tarea.titulo} ahora es ${estado}.`;
+  }
 }
