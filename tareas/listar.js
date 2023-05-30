@@ -3,6 +3,4 @@ const listar = function (tareas = this.tareas) {
       console.log(`CLASE: ${clase}: ${titulo} --> ${estado}`);
     })
 }
-module.exports = {
-    listar
-}
+module.exports =   listar
