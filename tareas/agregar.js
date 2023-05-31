@@ -1,3 +1,5 @@
+const Tarea = require("./Tarea");
+const {escribirJSON} = require("../data")
 const agregar = function (clase, titulo) {
     const tareas = this.tareas;
     let tarea = new Tarea(clase, titulo);
