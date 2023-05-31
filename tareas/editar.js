@@ -1,5 +1,7 @@
+const { leerJSON, escribirJSON } = require("../data");
+
 const editar = function(clase, estado) {
-  const tareas = this.tareas;
+  const tareas = leerJSON();
   const tarea = tareas.find((tarea) => tarea.clase === clase);
   if (!tarea) {
     return console.log(`ERROR: La clase ${clase} no se encuentra`);
